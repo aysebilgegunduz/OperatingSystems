@@ -19,8 +19,6 @@ for i in range(n):
     if i >0 and process_queue[i][1] < total_btime:
         process_queue[i].append(total_btime - process_queue[i][1])
         total_btime += process_queue[i][2]
-    elif i>0 and process_queue[i][1] > total_btime:
-        process_queue[i].append(total_btime)
     else:
         process_queue[i].append(0)
 
