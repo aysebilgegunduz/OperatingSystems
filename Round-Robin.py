@@ -4,7 +4,7 @@ def roundrobin(*iterables):
     sentinel = object()
     return (x for x in chain(*zip_longest(fillvalue=sentinel, *iterables)) if x is not sentinel)
 
-print(list(roundrobin('ABC', 'D', 'EF')))
+print(list(roundrobin('ABC', 'D', 'EF','GHIJ')))
 
 
 # copy from
