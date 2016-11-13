@@ -22,7 +22,6 @@ process_queue.sort(key = lambda process_queue:process_queue[1])
 min_list = min(process_queue, key=lambda x: x[1])
 total_btime = min_list[2]
 waiting_queue.append(min_list + [min_list[1]])
-total_btime = min_list[2]
 i = process_queue.index(min_list)
 process_queue.pop(i)
 
